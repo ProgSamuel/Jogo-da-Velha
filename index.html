@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="shortcut icon" href="./images/icons8-tic-tac-toe-67.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>Tic-Tac-Toe</title>
 </head>
 <body>
-    <section id="container">
+    <main id="container">
         <h1>Tic Tac Toe</h1>
         <div id="game">
             <div class="status" id="turn">Player's Turn: <span id="current-player">X</span></div>
@@ -36,7 +37,20 @@
                 <button id="reset-score-button" onclick="resetScore()">Reset Score</button>
             </div>
         </div>
-    </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>Developed by <a href="https://github.com/ProgSamuel">Samuel Ramos</a></p>
+        </div>
+        <div class="contact">
+            <a href="https://github.com/ProgSamuel" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/samuel-ramos-dev/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:progsamu@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+        </div>
+
+    </footer>
+    
     <script src="./assets/script.js"></script>
 </body>
 </html>
