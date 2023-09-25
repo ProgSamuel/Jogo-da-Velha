@@ -21,7 +21,6 @@ const currentPlayerDisplay = document.getElementById("current-player");
 const scoreXDisplay = document.getElementById("scoreX");
 const scoreODisplay = document.getElementById("scoreO");
 const scoreDrawDisplay = document.getElementById("scoreDraw");
-// const turnDisplay = document.getElementById("turn")
 
 function makeMove(cellIndex) {
     if (gameActive && board[cellIndex] === "") {
@@ -31,7 +30,7 @@ function makeMove(cellIndex) {
         if (checkWin()) {
             updateScore();
             gameActive = false;
-            currentPlayerDisplay.textContent = "The winner was: " + currentPlayer;
+            currentPlayerDisplay.textContent = "The winner was " + currentPlayer;
         } else if (board.indexOf("") === -1) {
             gameActive = false;
             currentPlayerDisplay.textContent = "Draw!";
